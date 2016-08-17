@@ -27,6 +27,7 @@ var mongoose = require('mongoose');
 mongoose.connect(process.env.MONGOLAB_CL);
 
 app.use('/', routes);
+app.use('/new', routes);
 app.use('/users', users);
 
 // catch 404 and forward to error handler
