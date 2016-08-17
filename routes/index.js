@@ -17,10 +17,10 @@ router.get('/new', function(req, res, next) {
 //POST route
 router.post('/newNote', function(req, res, next) {
 
-  let title = req.body.title;
+  var title = req.body.title;
   console.log(title);
-  let content = req.body.content;
-  let tags = req.body.tags;
+  var content = req.body.content;
+  var tags = req.body.tags;
 
   let note = new Note({
     title: title,
