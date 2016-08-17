@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //insert mongoose here
 var mongoose = require('mongoose');
-mongoose.connect(process.env.MONGOLAB_CL);
+mongoose.connect(process.env.MONGODB_URI);
 
 app.use('/', routes);
 app.use('/new', routes);
