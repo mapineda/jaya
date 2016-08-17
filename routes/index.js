@@ -22,7 +22,7 @@ router.post('/newNote', function(req, res, next) {
   var content = req.body.content;
   var tags = req.body.tags;
 
-  let note = new Note({
+  var note = new Note({
     title: title,
     content: content,
     tags: tags
