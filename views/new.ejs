@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <div class='note'>
+
+    <form action="/newNote" method='POST'>
+
+      <div>
+      <input type="text" id='title' name='title' placeholder='Dream'>
+      </div>
+
+      <div>
+      <input type="text" id='content' name='content' placeholder='Description'>
+      </div>
+
+      <div>
+      <input type="text" id='tags' name='tags' placeholder='input tags separated by commas'>
+      </div>
+
+      <button class='submit'>submit</button>
+    </form>
+
+    </div>
+
+  </body>
+
+</html>
